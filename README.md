@@ -1,6 +1,7 @@
 # MyAndroidView
 用于记录自定义View的学习
-
+![image](https://github.com/JDNew/MyAndroidView/blob/master/app/src/main/res/mipmap-hdpi/process.jpg)
+图片来自于“安卓自定义View进阶-分类与流程”一文
 
 ## SimpleView
 这是第一个最基础的介绍说明，主要是学习一些它的主要重写的方法和参数的意思
@@ -13,8 +14,13 @@
 ## 1.1 SimpleTextView
    为TextView加上边框和背景
 ## 1.2 SimpleLinearGradientTextView
-   让TextView有动态的文字闪动的效果
+   让TextView有动态的文字闪动的效果，从这里我们也可以看出onSizeChange是在onDraw之前执行的。
 
 参考来源：
 《Android群英传》——徐宜生
+
 [安卓自定义View进阶-分类与流程](http://www.gcssloop.com/customview/CustomViewProcess)
+
+[关于着色器LinearGradient的使用](http://blog.csdn.net/u012702547/article/details/50821044)
+
+[深入理解 Android 中的 Matrix](http://www.jianshu.com/p/6aa6080373ab)
