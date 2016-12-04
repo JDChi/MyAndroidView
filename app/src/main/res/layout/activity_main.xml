@@ -10,7 +10,17 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.ugiant.myandroidview.MainActivity">
 
-    <com.ugiant.myandroidview.view.SimpleView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <!--<com.ugiant.myandroidview.view.SimpleView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <!--<com.ugiant.myandroidview.view.SimpleTextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="1111111"/>-->
+
+    <com.ugiant.myandroidview.view.SimpleLinearGradientTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hello world"/>
 </RelativeLayout>
