@@ -1,6 +1,8 @@
 # MyAndroidView
 用于记录自定义View的学习
+
 ![image](https://github.com/JDNew/MyAndroidView/blob/master/app/src/main/res/mipmap-hdpi/process.jpg)
+
 图片来自于“安卓自定义View进阶-分类与流程”一文
 
 ## SimpleView
