@@ -18,8 +18,13 @@
 ## 1.2 SimpleLinearGradientTextView
    让TextView有动态的文字闪动的效果，从这里我们也可以看出onSizeChange是在onDraw之前执行的。
 
+## 2.1 SimpleTopBar
+   通过将控件组合来实现一个通用的标题栏
+
+
+
 参考来源：
-《Android群英传》——徐宜生
+[《Android群英传》](https://book.douban.com/subject/26599539/)
 
 [安卓自定义View进阶-分类与流程](http://www.gcssloop.com/customview/CustomViewProcess)
 
