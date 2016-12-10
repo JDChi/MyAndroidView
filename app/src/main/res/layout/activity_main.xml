@@ -22,15 +22,20 @@
         <!--android:layout_height="wrap_content"-->
         <!--android:text="hello world"/>-->
 
-    <com.ugiant.myandroidview.view.SimpleTopBar
-        android:id="@+id/tb_title"
+    <!--<com.ugiant.myandroidview.view.SimpleTopBar-->
+        <!--android:id="@+id/tb_title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--app:leftText="返回"-->
+        <!--app:leftTextColor="@color/colorAccent"-->
+        <!--app:rightText="分享"-->
+        <!--app:rightTextColor="@color/colorPrimary"-->
+        <!--app:title="自定义标题"-->
+        <!--app:titleTextSize="12sp"-->
+        <!--app:titleTextColor="@color/colorPrimaryDark"></com.ugiant.myandroidview.view.SimpleTopBar>-->
+
+    <com.ugiant.myandroidview.view.SimpleArchView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        app:leftText="返回"
-        app:leftTextColor="@color/colorAccent"
-        app:rightText="分享"
-        app:rightTextColor="@color/colorPrimary"
-        app:title="自定义标题"
-        app:titleTextSize="12sp"
-        app:titleTextColor="@color/colorPrimaryDark"></com.ugiant.myandroidview.view.SimpleTopBar>
+        android:layout_height="300dp"
+        android:id="@+id/simpleArchView" />
 </RelativeLayout>

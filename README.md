@@ -21,6 +21,8 @@
 ## 2.1 SimpleTopBar
    通过将控件组合来实现一个通用的标题栏
 
+## 3.1 SimpleArchView
+   通过重写view来实现一个简单的比例图
 
 
 参考来源：
