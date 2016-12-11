@@ -55,12 +55,14 @@ public class SimpleArchView extends View {
         mPaintCircle = new Paint();
         mPaintCircle.setStyle(Paint.Style.FILL);
         mPaintCircle.setColor(Color.GRAY);
+        mPaintCircle.setAntiAlias(true);
 
         mPaintText = new Paint();
         mPaintText.setStyle(Paint.Style.FILL);
         mPaintText.setColor(Color.BLACK);
         mPaintText.setTextSize(60);
         mPaintText.setTextAlign(Paint.Align.CENTER);
+        mPaintText.setAntiAlias(true);
 
         text = "hello world";
 
@@ -68,6 +70,7 @@ public class SimpleArchView extends View {
         mPaintArch.setStyle(Paint.Style.STROKE);
         mPaintArch.setStrokeWidth(20);
         mPaintArch.setColor(Color.GRAY);
+        mPaintArch.setAntiAlias(true);
 
         float topx = (float)(measureWidth / 2 - (mRadius + 30));
         float topy =  (float)(measureHeight / 2 - (mRadius + 30));

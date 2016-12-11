@@ -34,8 +34,12 @@
         <!--app:titleTextSize="12sp"-->
         <!--app:titleTextColor="@color/colorPrimaryDark"></com.ugiant.myandroidview.view.SimpleTopBar>-->
 
-    <com.ugiant.myandroidview.view.SimpleArchView
+    <!--<com.ugiant.myandroidview.view.SimpleArchView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="300dp"-->
+        <!--android:id="@+id/simpleArchView" />-->
+    
+    <com.ugiant.myandroidview.view.SimpleAudioBarChatView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:id="@+id/simpleArchView" />
+        android:layout_height="300dp" />
 </RelativeLayout>
