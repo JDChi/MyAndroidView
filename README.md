@@ -27,6 +27,9 @@
 ## 3.1 SimpleArchView
    通过重写view来实现一个简单的比例图
 
+## 3.2 SimpleAudioBarChatView
+   通过重写view来实现一个简单的音频条形图
+
 ---
 
 参考来源：
