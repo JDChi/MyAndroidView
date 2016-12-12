@@ -30,6 +30,8 @@
 ## 3.2 SimpleAudioBarChatView
    通过重写view来实现一个简单的音频条形图
 
+自定义ViewGroup SimpleScrollView
+
 ---
 
 参考来源：

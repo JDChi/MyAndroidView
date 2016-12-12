@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+android:orientation="vertical"
     tools:context="com.ugiant.myandroidview.MainActivity">
 
     <!--<com.ugiant.myandroidview.view.SimpleView-->
@@ -39,7 +39,39 @@
         <!--android:layout_height="300dp"-->
         <!--android:id="@+id/simpleArchView" />-->
     
-    <com.ugiant.myandroidview.view.SimpleAudioBarChatView
+    <!--<com.ugiant.myandroidview.view.SimpleAudioBarChatView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="300dp" />-->
+
+    <com.ugiant.myandroidview.view.SimpleScrollView
         android:layout_width="match_parent"
-        android:layout_height="300dp" />
-</RelativeLayout>
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/process"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"
+            />
+
+
+
+    </com.ugiant.myandroidview.view.SimpleScrollView>
+</LinearLayout>
