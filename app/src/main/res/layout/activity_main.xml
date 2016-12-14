@@ -43,35 +43,39 @@ android:orientation="vertical"
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="300dp" />-->
 
-    <com.ugiant.myandroidview.view.SimpleScrollView
+    <!--<com.ugiant.myandroidview.view.SimpleScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:src="@mipmap/ic_launcher"-->
+            <!--/>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:src="@mipmap/process"-->
+            <!--/>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:src="@mipmap/ic_launcher"-->
+            <!--/>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:src="@mipmap/ic_launcher"-->
+            <!--/>-->
+
+
+
+    <!--</com.ugiant.myandroidview.view.SimpleScrollView>-->
+
+    <com.ugiant.myandroidview.view.SimplePathTestView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@mipmap/ic_launcher"
-            />
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@mipmap/process"
-            />
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@mipmap/ic_launcher"
-            />
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@mipmap/ic_launcher"
-            />
-
-
-
-    </com.ugiant.myandroidview.view.SimpleScrollView>
+        android:layout_height="match_parent" />
 </LinearLayout>
