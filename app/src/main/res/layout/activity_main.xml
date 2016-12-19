@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAccent"
 android:orientation="vertical"
     tools:context="com.ugiant.myandroidview.MainActivity">
 
@@ -75,7 +76,12 @@ android:orientation="vertical"
 
     <!--</com.ugiant.myandroidview.view.SimpleScrollView>-->
 
-    <com.ugiant.myandroidview.view.SimplePathTestView
+    <!--<com.ugiant.myandroidview.view.SimplePathTestView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <com.ugiant.myandroidview.demo_view.OwnBottomTabView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-</LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:layout_height="100dp" />
+</RelativeLayout>

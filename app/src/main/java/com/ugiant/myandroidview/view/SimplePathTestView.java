@@ -71,10 +71,18 @@ public class SimplePathTestView extends View {
         //将两个Path合并成为一个（结束）
 
 
+        //addArc与arcTo
         canvas.scale(1 , -1); //翻转y坐标轴
         path.lineTo(100 , 100);
         RectF oval = new RectF(0 , 0 , 300 , 300);
-        path.addArc(oval , 180 , 270 );
+        //addArc 从零度开始，逆时针转270度，参考文章5
+//        path.addArc(oval , 0 , 270 );
+        // 与上一句相同
+//        path.arcTo(oval , 0 , 270 , true);
+        //arcTo 连接圆弧的起点和上次的最后一个点
+//        path.arcTo(oval , 0 , 270);
+
+//        path.arcTo(oval , 0 , 270 , false);
 
 
         canvas.drawPath(path, mPaint);

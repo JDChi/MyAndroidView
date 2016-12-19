@@ -39,10 +39,12 @@
 ---
 
 参考来源：
-[《Android群英传》](https://book.douban.com/subject/26599539/)
+1.[《Android群英传》](https://book.douban.com/subject/26599539/)
 
-[安卓自定义View进阶-分类与流程](http://www.gcssloop.com/customview/CustomViewProcess)
+2.[安卓自定义View进阶-分类与流程](http://www.gcssloop.com/customview/CustomViewProcess)
 
-[关于着色器LinearGradient的使用](http://blog.csdn.net/u012702547/article/details/50821044)
+3.[关于着色器LinearGradient的使用](http://blog.csdn.net/u012702547/article/details/50821044)
 
-[深入理解 Android 中的 Matrix](http://www.jianshu.com/p/6aa6080373ab)
+4.[深入理解 Android 中的 Matrix](http://www.jianshu.com/p/6aa6080373ab)
+
+5.[Understanding Sweep angle in drawArc method of android](http://www.cumulations.com/blogs/5/Understanding-Sweep-angle-in-drawArc-method-of-android)
