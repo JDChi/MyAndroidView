@@ -4,6 +4,8 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Path;
+import android.graphics.Point;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.util.AttributeSet;
@@ -18,6 +20,9 @@ public class OwnBottomTabView extends View {
     private int mWidth;
     private int mHeight;
     private Paint mArcPaint;
+    private Path mPath;
+    private Point mStartPoint , mEndPoint , mControlPoint;
+
 
 
     public OwnBottomTabView(Context context, AttributeSet attrs) {
@@ -27,12 +32,17 @@ public class OwnBottomTabView extends View {
 
     private void initView() {
         mRectPaint = new Paint();
-        mRectPaint.setStyle(Paint.Style.FILL);
-        mRectPaint.setColor(Color.WHITE);
+        mRectPaint.setStyle(Paint.Style.STROKE);
+        mRectPaint.setStrokeWidth(20);
+        mRectPaint.setColor(Color.BLACK);
 
         mArcPaint = new Paint();
         mArcPaint.setStyle(Paint.Style.FILL);
         mArcPaint.setColor(Color.YELLOW);
+
+
+        mPath = new Path();
+
 
 
     }
@@ -47,9 +57,20 @@ public class OwnBottomTabView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        Rect rect = new Rect(0 , 0 , mWidth , mHeight);
-        canvas.drawRect(rect , mRectPaint);
-        RectF rectf = new RectF(50 , 0 , mWidth-50 , mHeight);
-        canvas.drawArc(rectf , 0 , 180 , true , mArcPaint);
+//        Rect rect = new Rect(0 , 0 , mWidth , mHeight);
+//        canvas.drawRect(rect , mRectPaint);
+//        RectF rectf = new RectF(50 , 0 - mHeight/2 , mWidth-50 , 0);
+//        canvas.drawArc(rectf , 0 , 180 , true , mArcPaint);
+
+        mStartPoint = new Point(50 , 0);
+        mEndPoint = new Point(mWidth - 50 , 0);
+        mControlPoint = new Point(mWidth * 2 / 3 , mHeight * 2 / 3);
+        mPath.lineTo(50 , 0);
+        mPath.moveTo(50 , 0);
+        mPath.quadTo(mControlPoint.x , mControlPoint.y , mEndPoint.x , mEndPoint.y);
+        mPath.moveTo(mWidth - 50 , 0);
+        mPath.lineTo(mWidth , 0);
+
+        canvas.drawPath(mPath , mRectPaint);
     }
 }
