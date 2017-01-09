@@ -16,8 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".activity.BottomWayActivity"></activity>
         <activity android:name=".activity.BottomTabTabLayoutActivity"></activity>
+
+        <activity android:name=".activity.PracticeActivity"></activity>
+        <activity android:name=".activity.GetStartActivity"></activity>
+        <activity android:name=".activity.activity_get_start.TextViewActivity"></activity>
+        <activity android:name=".activity.activity_get_start.ViewActivity"></activity>
+        <activity android:name=".activity.activity_get_start.TopBarActivity"></activity>
+        <activity android:name=".activity.activity_get_start.AudioBarChatViewActivity"></activity>
+
     </application>
 
 </manifest>
