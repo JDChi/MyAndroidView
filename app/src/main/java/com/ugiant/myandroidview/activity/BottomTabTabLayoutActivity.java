@@ -79,10 +79,7 @@ public class BottomTabTabLayoutActivity extends BaseActivity {
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
                 if (tab.getPosition() == 0) {
-
                     one.setIcon(R.mipmap.ic_mine_blcak_24dp);
-
-
                 } else if (tab.getPosition() == 1) {
                     two.setIcon(R.mipmap.ic_videocam_black_24dp);
                 } else if (tab.getPosition() == 2) {

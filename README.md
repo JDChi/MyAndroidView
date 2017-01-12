@@ -34,9 +34,13 @@
 ## SimpleScrollView
 
 ## SimplePathTestView
-学习path的入门
 
----
+
+# 学习path的入门
+## LeafLoadingView
+按照博客《一个绚丽的loading动效分析与实现！》的代码自己实现一遍，只是修改了变量名和代码位置调整，学习作者的实现过程。
+
+-----------
 
 参考来源：
 1.[《Android群英传》](https://book.douban.com/subject/26599539/)
@@ -48,3 +52,5 @@
 4.[深入理解 Android 中的 Matrix](http://www.jianshu.com/p/6aa6080373ab)
 
 5.[Understanding Sweep angle in drawArc method of android](http://www.cumulations.com/blogs/5/Understanding-Sweep-angle-in-drawArc-method-of-android)
+
+6. [一个绚丽的loading动效分析与实现！](http://blog.csdn.net/tianjian4592/article/details/44538605)
