@@ -25,12 +25,20 @@
 
         </activity>
         <activity android:name=".activity.activity_practice.RadarViewActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
+        <activity android:name=".activity.activity_get_start.BezierViewSecondOrderActivity">
+
+        </activity>
+<activity android:name=".activity.activity_get_start.BezierViewThirdOrderActivity">
+
+    <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+
+</activity>
 
     </application>
 

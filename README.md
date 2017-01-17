@@ -43,6 +43,9 @@
 ## RadarView
 一个模仿成就图的类雷达，参考的博客为《Android雷达图(蜘蛛网图)绘制》
 
+## SimpleBezierSecondOrderView  SimpleBezierThirdOrderView
+二阶和三阶的贝塞尔曲线
+
 -----------
 
 参考来源：
@@ -59,4 +62,4 @@
 
 6.[一个绚丽的loading动效分析与实现！](http://blog.csdn.net/tianjian4592/article/details/44538605)
 
-7. [Android雷达图(蜘蛛网图)绘制](http://blog.csdn.net/crazy__chen/article/details/50163693)
+7.[Android雷达图(蜘蛛网图)绘制](http://blog.csdn.net/crazy__chen/article/details/50163693)
