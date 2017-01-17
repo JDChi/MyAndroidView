@@ -89,6 +89,8 @@ public class LeafLoadingView extends View {
     private LeafFactory leafFactory;
 
 
+
+
     public LeafLoadingView(Context context, AttributeSet attrs) {
         super(context, attrs);
         mContext = context;
@@ -168,6 +170,11 @@ public class LeafLoadingView extends View {
 
     }
 
+    @Override
+    public void draw(Canvas canvas) {
+        super.draw(canvas);
+    }
+
     /**
      * 确定外框的绘制区域和在屏幕上的显示区域
      */
@@ -208,8 +215,6 @@ public class LeafLoadingView extends View {
 
         //如果当前进度位置小于弧形半径，那么首先它背景的填充要包括弧形和后面的矩形，然后进度就只要画弧形里的区域就行了
         if (mCurrentProgressHorizontalPosition < mArcRadius) {
-
-
 
             //绘制弧形背景
             canvas.drawArc(mArcRectF, 90, 180, false, mBackgroundWhitePaint);
@@ -310,12 +315,7 @@ public class LeafLoadingView extends View {
                 matrix.postRotate(rotate, transX + leafWidth / 2 , transY + leafHeight / 2);
                 canvas.drawBitmap(leafBitmap , matrix , bitmapPaint);
                 canvas.restore();
-            }else {
-                continue;
             }
-
-
-
         }
 
 
