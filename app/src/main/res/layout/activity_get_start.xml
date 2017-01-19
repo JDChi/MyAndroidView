@@ -36,6 +36,18 @@
                 android:layout_height="wrap_content"
                 android:text="audio_bar_chat"/>
 
+            <Button
+                android:id="@+id/bt_bezier_second_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="bezier_second_order"/>
+
+            <Button
+                android:id="@+id/bt_bezier_third_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="bezier_third_order"/>
+
 
         </LinearLayout>
     </ScrollView>

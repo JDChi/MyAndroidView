@@ -61,7 +61,7 @@ public class SimpleBezierThirdOrderView extends View {
         control1.x = mCenterX;
         control1.y = mCenterY - 100;
         control2.x = mCenterX;
-        control2.y = mCenterY + 100;
+        control2.y = mCenterY - 100;
 
 
 

@@ -46,6 +46,9 @@
 ## SimpleBezierSecondOrderView  SimpleBezierThirdOrderView
 二阶和三阶的贝塞尔曲线
 
+## SimpleBezierHeartThirdOrderView
+用四段三阶贝塞尔曲线画心形
+
 -----------
 
 参考来源：

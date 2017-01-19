@@ -9,6 +9,8 @@ import android.widget.Button;
 
 import com.ugiant.myandroidview.R;
 import com.ugiant.myandroidview.activity.activity_get_start.AudioBarChatViewActivity;
+import com.ugiant.myandroidview.activity.activity_get_start.BezierViewSecondOrderActivity;
+import com.ugiant.myandroidview.activity.activity_get_start.BezierViewThirdOrderActivity;
 import com.ugiant.myandroidview.activity.activity_get_start.TextViewActivity;
 import com.ugiant.myandroidview.activity.activity_get_start.TopBarActivity;
 import com.ugiant.myandroidview.activity.activity_get_start.ViewActivity;
@@ -22,6 +24,8 @@ public class GetStartActivity extends AppCompatActivity implements View.OnClickL
     private Button bt_view;
     private Button bt_top_bar;
     private Button bt_audio_bar_chat;
+    private Button bt_bezier_second_order;
+    private Button bt_bezier_third_order;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -40,6 +44,10 @@ public class GetStartActivity extends AppCompatActivity implements View.OnClickL
         bt_top_bar.setOnClickListener(this);
         bt_audio_bar_chat = (Button) findViewById(R.id.bt_audio_bar_chat);
         bt_audio_bar_chat.setOnClickListener(this);
+        bt_bezier_second_order = (Button) findViewById(R.id.bt_bezier_second_order);
+        bt_bezier_second_order.setOnClickListener(this);
+        bt_bezier_third_order = (Button) findViewById(R.id.bt_bezier_third_order);
+        bt_bezier_third_order.setOnClickListener(this);
     }
 
     @Override
@@ -56,6 +64,12 @@ public class GetStartActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.bt_audio_bar_chat:
                 startActivity(new Intent(GetStartActivity.this, AudioBarChatViewActivity.class));
+                break;
+            case R.id.bt_bezier_second_order:
+                startActivity(new Intent(GetStartActivity.this, BezierViewSecondOrderActivity.class));
+                break;
+            case R.id.bt_bezier_third_order:
+                startActivity(new Intent(GetStartActivity.this, BezierViewThirdOrderActivity.class));
                 break;
         }
     }
