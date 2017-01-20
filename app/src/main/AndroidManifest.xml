@@ -36,6 +36,13 @@
         </activity>
         <activity android:name=".activity.activity_get_start.BezierViewHeartThirdOrderActivity">
 
+
+        </activity>
+        <activity android:name=".activity.activity_practice.SwitchLocationViewActivity">
+
+
+        </activity>
+        <activity android:name=".activity.activity_practice.MagicCircleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

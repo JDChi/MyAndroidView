@@ -122,12 +122,6 @@ public class SimpleBezierHeartThirdOrderView extends View {
         leftTopCtrlPoint = new PointF(mCtrl[8] , mCtrl[9]);
         leftBottomCtrlPoint = new PointF(mCtrl[10] , mCtrl[11]);
 
-
-
-
-
-
-
         path.moveTo(topPoint.x , topPoint.y);
 
         path.cubicTo(rightTopCtrlPoint.x , rightTopCtrlPoint.y ,rightBottomCtrlPoint.x , rightBottomCtrlPoint.y , rightPoint.x , rightPoint.y);
