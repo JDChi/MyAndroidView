@@ -43,6 +43,13 @@
 
         </activity>
         <activity android:name=".activity.activity_practice.MagicCircleActivity">
+
+        </activity>
+        <activity android:name=".activity.activity_get_start.PathActivity">
+
+
+        </activity>
+        <activity android:name=".activity.activity_get_start.PathOPActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
