@@ -83,7 +83,7 @@ public class SimplePathOPView extends View {
         canvas.drawText("XOR" , 240 , 0 , paint);
         canvas.drawPath(pathResult , paint);
 
-
+        //这里连续的translate是指在上一个的基础上偏移，所以它的y坐标就是0 ， 200 ， 500这样
 
 
 

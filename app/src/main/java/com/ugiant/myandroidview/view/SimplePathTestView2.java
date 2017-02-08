@@ -5,6 +5,8 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.Rect;
+import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -68,20 +70,38 @@ canvas.translate(mWidth /2 , mHeight / 2);
         // path.addRect(-400, -400, 400, 400, Path.Direction.CCW);
 
 
-        Path path1 = new Path();
-        Path path2 = new Path();
-        Path path3 = new Path();
+//        Path path1 = new Path();
+//        Path path2 = new Path();
+//        Path path3 = new Path();
+//
+//        path.addCircle(0 , 0 , 200 , Path.Direction.CW);
+//        path1.addRect(0 , -200 , 200 , 200 , Path.Direction.CW);
+//        path2.addCircle(0 , -100 , 100 , Path.Direction.CW);
+//        path3.addCircle(0 , 100 , 100 , Path.Direction.CCW);
+//
+//        //需要在19后才有
+//        path.op(path1 , Path.Op.DIFFERENCE);
+//        path.op(path2 , Path.Op.UNION);
+//        path.op(path3 , Path.Op.DIFFERENCE);
 
-        path.addCircle(0 , 0 , 200 , Path.Direction.CW);
-        path1.addRect(0 , -200 , 200 , 200 , Path.Direction.CW);
-        path2.addCircle(0 , -100 , 100 , Path.Direction.CW);
-        path3.addCircle(0 , 100 , 100 , Path.Direction.CCW);
+        RectF rectF = new RectF();
+        path.lineTo(100 , -50);
+        path.lineTo(100 , 50);
+        path.close();
+        path.addCircle(-100 , 0 , 100 , Path.Direction.CW);
+        //计算边界并存入矩形内，通过获取矩形的数据来知道该图形的位置和边界大小
+        path.computeBounds(rectF , true);
 
-        //需要在19后才有
-        path.op(path1 , Path.Op.DIFFERENCE);
-        path.op(path2 , Path.Op.UNION);
-        path.op(path3 , Path.Op.DIFFERENCE);
         canvas.drawPath(path, paint);
+
+        paint.setStyle(Paint.Style.STROKE);
+        paint.setStrokeWidth(4);
+        paint.setColor(Color.RED);
+        canvas.drawRect(rectF , paint);
+
+        String left = String.valueOf(rectF.left);
+        paint.setTextSize(50);
+        canvas.drawText(left , 0 , -400 , paint);
 
 
     }

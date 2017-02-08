@@ -46,17 +46,20 @@
 
         </activity>
         <activity android:name=".activity.activity_get_start.PathActivity">
-
-
-        </activity>
-        <activity android:name=".activity.activity_get_start.PathOPActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
 
+        </activity>
+        <activity android:name=".activity.activity_get_start.PathOPActivity">
+
+        </activity>
+<activity android:name=".activity.activity_get_start.CanvasTestActivity">
+
+
+</activity>
     </application>
 
 </manifest>
